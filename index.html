@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaditya Sapkota Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1 class="logo">Aaditya Sapkota</h1>
+            <div class="nav-links">
+                <a href="#home"><b>Home</b></a>
+                <a href="#about"><b>About</b></a>
+                <a href="#skills"><b>Skills</b></a>
+                <a href="#blog"><b>Blog</b></a>
+                <a href="#contact"><b>Contact</b></a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 aria-label="Welcome, I am Aaditya Sapkota">Hi, I'm <span class="highlight">Aaditya Sapkota</span></h1>
+                    <p class="tagline">
+                        Aspiring Data Scientist & Research Enthusiast
+                    </p>
+                    <a href="#contact" class="cta-button"><b>Get in Touch</b></a>
+                </div>
+                <div class="hero-image">
+                    <img src="my_photo.jpg" alt="Aaditya Sapkota" class="profile-photo"
+                        aria-label="Aaditya Sapkota's profile picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 aria-label="About me">About Me</h2>
+            <div class="about-content">
+                <div class="bio">
+
+                    <p>Aspiring Research Scientist with a strong data science and machine learning foundation
+                        driven to create impactful solutions. Skilled in programming,data analysis,
+                        and visualization with a proven leadership and event coordination track records.
+                    </p>
+
+                    <h3>Education</h3>
+                    <ul class="education-list" aria-label="Education list">
+                        🎓 Bachelor's in Data Science - Kathmandu University (2024-2029)<br>
+                        📚 Certified Associate Data Scientist in Python - Datacamp.com
+                    </ul>
+                </div>
+
+                <div class="interests">
+                    <h3>Hobbies & Interests</h3>
+                    <div class="hobbies-grid" aria-label="My hobbies">
+                        <div class="hobby-item">
+                            <i class="fas fa-camera"></i>
+                            <span>Generative AI and Deep learning</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-book"></i>
+                            <span>Reading and Poetry</span>
+                        </div>
+                        <!-- Add more hobbies -->
+                    </div>
+                    <a href="myresume_updated.jpg" download class="cv-button">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 aria-label="My Skills">My Skills</h2>
+            <div class="skills-grid" aria-label="Technical Skills">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3/Sass</li>
+                        <li>JavaScript (ES6+)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                        <li>SQL Databases</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section">
+        <div class="container">
+            <h2 aria-label="Latest Blog Posts">Latest Posts</h2>
+            <div id="blog-posts" class="blog-grid" aria-label="Blog Post Collection">
+                <!-- Static blog posts -->
+                <div class="blog-post">
+                    <h3>My First Blog</h3>
+                    <p>Really Excited for gathering a new experience and new audience.
+
+                        I am feeling flabbergasted from the depth of my heart.
+                        It's actually my first time on such a big platform to
+                        express one's inner psyche. </p>
+                </div>
+                <div class="blog-post">
+                    <h3>Don't miss anything !</h3>
+                    <p>Enjoy every moment every bit of life that happens to you for dont behave like you have got
+                        thousand years to live .Do what you feel like to do ,Life is meant to be lived ,Make sure you
+                        don't miss anything .</p>
+                </div>
+            </div>
+                <div class="blog-loader">Loading posts...</div>
+            <a href="https://aadityasapkota.blogspot.com/" class="blog-link" target="_blank"
+                aria-label="View All Posts">View All Posts →</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 aria-label="Contact Me">Let's Connect</h2>
+
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <form id="contact-form" aria-label="Contact Form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required aria-label="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required aria-label="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Your Message" required aria-label="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" aria-label="Send Message">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="newsletter">
+                        <h3 aria-label="Subscribe for updates">Stay Updated</h3>
+                        <form id="newsletter-form" aria-label="Newsletter Form">
+                            <input type="email" placeholder="Enter email for updates" required
+                                aria-label="Enter email for updates">
+                            <button type="submit" aria-label="Subscribe">Subscribe</button>
+                        </form>
+                    </div>
+
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.166594762845!2d85.5387702!3d27.6193566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb09d44e64d02b%3A0xfe79a3be7ee90d1b!2sKathmandu%20University!5e0!3m2!1sen!2snp!4v1738138875433!5m2!1sen!2snp"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" aria-label="Google map location">
+                        </iframe>
+                    </div>
+
+                    <div class="social-links-container" aria-label="Social Media links">
+                        <div class="social-links">
+                            <a href="https://github.com/TechAaditya" target="_blank" aria-label="GitHub profile"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/aadityasapkota/" target="_blank"
+                                aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://x.com/aadityabro1" target="_blank" aria-label="Twitter profile"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://aadityasapkota.blogspot.com/" target="_blank" aria-label="Blog profile"><i
+                                    class="fas fa-blog"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <footer>
+        <p>© 2024 Aaditya Sapkota. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
